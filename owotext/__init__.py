@@ -11,7 +11,7 @@ __title__ = 'owotext'
 __author__ = 'DerpyChap'
 __license__ = 'ISC'
 __copyright__ = 'Copyright 2020 DerpyChap'
-__version__ = '1.0.1'
+__version__ = '1.0.2'
 
 from collections import namedtuple
 from .owo import OwO

@@ -76,11 +76,15 @@ def main(args=None):
         description='A Python library for converting text strings into OwO',
         epilog='https://github.com/DerpyChap/owotext')
     
-  parser.add_argument('text', type=str, nargs='+', help='The text to OwO', default=sys.stdin)
+  parser.add_argument('text', type=str, nargs='*', help='The text to OwO', default=["Please give me some text to OwO"])
 
   args = parser.parse_args()
-  o = OwO()
   text = ' '.join(args.text)
+
+  if not sys.stdin.isatty():
+    text = sys.stdin.read().rstrip()
+
+  o = OwO()
   print(o.whatsthis(text))
 
 if __name__ == '__main__':
