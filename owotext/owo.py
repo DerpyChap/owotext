@@ -1,5 +1,6 @@
 import random
 import argparse
+import sys
 
 prefixes = [
   '<3 ',
@@ -75,7 +76,7 @@ def main(args=None):
         description='A Python library for converting text strings into OwO',
         epilog='https://github.com/DerpyChap/owotext')
     
-  parser.add_argument('text', type=str, nargs='+', help='The text to OwO')
+  parser.add_argument('text', type=str, nargs='+', help='The text to OwO', default=sys.stdin)
 
   args = parser.parse_args()
   o = OwO()
