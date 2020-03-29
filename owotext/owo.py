@@ -70,14 +70,17 @@ class OwO:
             text = text.replace(key, value)
         return random.choice(self.prefixes) + text + random.choice(suffixes)
 
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(
+def main(args=None):
+  parser = argparse.ArgumentParser(
         description='A Python library for converting text strings into OwO',
         epilog='https://github.com/DerpyChap/owotext')
     
-    parser.add_argument('text', type=str, nargs='+', help='The text to OwO')
+  parser.add_argument('text', type=str, nargs='+', help='The text to OwO')
 
-    args = parser.parse_args()
-    o = OwO()
-    text = ' '.join(args.text)
-    print(o.whatsthis(text))
+  args = parser.parse_args()
+  o = OwO()
+  text = ' '.join(args.text)
+  print(o.whatsthis(text))
+
+if __name__ == '__main__':
+    main()

@@ -15,4 +15,9 @@ setup(name='owotext',
       license='MIT',
       packages=['owotext'],
       include_package_data=True,
-      zip_safe=False)
+      zip_safe=False,
+      entry_points={
+          'console_scripts': [
+              'owo = owotext.owo:main'
+          ]
+      })
