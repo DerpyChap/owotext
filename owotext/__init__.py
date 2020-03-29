@@ -14,7 +14,7 @@ __copyright__ = 'Copyright 2020 DerpyChap'
 __version__ = '1.0.0'
 
 from collections import namedtuple
-from .generator import Generator
+from .owo import OwO
 
 VersionInfo = namedtuple('VersionInfo', 'major minor micro releaselevel serial')
 
