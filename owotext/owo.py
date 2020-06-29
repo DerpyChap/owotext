@@ -69,10 +69,11 @@ class OwO:
     def whatsthis(self, text: str):
         for key, value in self.substitutions.items():
             text = text.replace(key, value)
-        try:
-          return random.choice(self.prefixes) + text + random.choice(self.suffixes)
-        except IndexError:
-          return text
+        if self.prefixes:
+          text = (random.choice(self.prefixes) + text)
+        if self.suffixes:
+          text = (text +random.choice(self.suffixes))
+        return text
 
 def main(args=None):
   parser = argparse.ArgumentParser(
