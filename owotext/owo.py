@@ -72,7 +72,7 @@ class OwO:
         if self.prefixes:
           text = (random.choice(self.prefixes) + text)
         if self.suffixes:
-          text = (text +random.choice(self.suffixes))
+          text = (text + random.choice(self.suffixes))
         return text
 
 def main(args=None):
