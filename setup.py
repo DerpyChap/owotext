@@ -5,7 +5,7 @@ def readme():
         return f.read()
 
 setup(name='owotext',
-      version='1.0.2',
+      version='1.0.3',
       description='A Python library for converting text strings into OwO',
       long_description=readme(),
       long_description_content_type='text/markdown',
