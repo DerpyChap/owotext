@@ -1,8 +1,10 @@
 from setuptools import setup
 
+
 def readme():
     with open('README.md', encoding='utf8') as f:
         return f.read()
+
 
 setup(name='owotext',
       version='1.0.3',
