@@ -7,7 +7,7 @@ def readme():
 
 
 setup(name='owotext',
-      version='1.1.0',
+      version='1.1.1',
       description='A Python library for converting text strings into OwO',
       long_description=readme(),
       long_description_content_type='text/markdown',
